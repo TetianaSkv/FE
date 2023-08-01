@@ -1,57 +1,22 @@
+.table1, th, td{
+    border: 1px solid black;
+    
 
-.header{
-    text-align: center;
-}
-.hobby{
-    background-color: beige;
-    border: 5px  solid darkblue;
-    padding: 20px;
-    margin: 20px 0px 0px 15px;
-}
-
-.hobby_img{
-    width: 200px;
-}
-
-h2{
-    text-align: center;
 
 }
 
+.table1 img{
+    width: 50px ;
+    vertical-align: center;
 
-.work{
-    background-color: greenyellow;
-    border: 5px  solid darkgreen;
-    padding: 20px;
-    margin: 20px 0px 0px 15px;
-}
-.work_img{
-    width: 200px;
-}
-
-
-
-.family{
-    background-color: pink;
-    border: 5px  solid darkorchid;
-    padding: 20px;
-    margin: 20px 0px 0px 15px;
-}
-.family_img, .family_img1{
-    width: 200px;
     
 }
 
+.table1 td{
+    width: auto;
+    height: 50px;
 
-.network{
-    background-color: white;
-    border: 3px  solid black;
-    padding: 20px;
-    margin: 20px 0px 0px 15px;
-    text-align: center;
 }
-.Facebook_Logo, .Insta_Logo, .LinkedIn_logo{
-    width: 30px;
-    
-    
-}
+
+
+
