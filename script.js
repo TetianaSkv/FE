@@ -1,57 +1,159 @@
-// Составьте программу, которая выводит на экран все однозначные 
-// положительные числа в возрастающем порядке. 
-//  Перед началом вывода на экран следует вывести "старт",
-//  а после окончания вывода чисел – "финиш".
-//  вывод: старт, 1, … 9, финиш)
+//  1. У нас есть следующий объект:
+// Проверьте, что этот объект не пустой и что в нем есть ключ age.
+
+// let user = {
+// name: "John",
+// age: 30
+// };
+// console.log(user);
+// console.log('age' in user);
 
 
-// alert("Start");
-// for(let index=1; index<10; index++){
-//     console.log(index);
-// }
-// alert("Finish");
 
 
-//  Составьте программу, которая выводит на экран все двузначные положительные числа,
-//  делящиеся без остатка на 3 и на 5 
-//  (начиная с наименьшего).
+
+// Создать объект product с названием(productname) и ценой(productprice) 
+// продукта и выведите данные в консоль.
+
+// let product = {
+//     productname: "Nike",
+//     productprice: '30 $'
+// };
+// console.log(product.productname);
+// console.log(product.productprice);
 
 
-// for(let i = 10; i < 100; i++){
-//     if (i % 3 == 0 && i % 5 == 0) {
-//         console.log(i);
+
+
+// Добавить в объект product свойства productquantity и productquality.
+
+// let product = {
+//     productname: "Nike",
+//     productprice: '30 $'
+// };
+// console.log(product);
+// product.productquantity = 3;
+// product.productquality = 'leader';
+
+
+
+
+
+
+// Удалить свойство product_quality из объекта product.
+
+// let product = {
+//     productname: "Nike",
+//     productprice: '30 $',
+//     productquantity: 3,
+//     productquality:'leader'
+
+// };
+// console.log(product);
+// delete product.productquality;
+
+
+
+
+// Написать код, выполнив задание: если значение объекта является числом (number), 
+// то его значение надо увеличить вдвое.
+// Пример объекта:
+
+ 
+// let menu = {
+//     width: 200, 
+//     height: 300,
+//     title: "my menu"
+// };
+
+
+// for (let key in menu) {
+//     if (typeof menu[key] == 'number') {
+//     menu[key] *= 2;
 //     }
+//     }
+    
+//     console.log(menu);
+
+// Результат:
+
+
+// let menu = {
+//     width: 400, 
+//     height: 600,
+//     title: "my menu"
+// };
+
+
+
+
+// Написать функцию, которая принимает 2 числа и возвращает 1, 
+// если первое число больше, чем второе; -1, если первое число меньше, 
+// чем второе, и 0, если числа равны.
+
+
+//     let param1 = prompt('Enter the number1');
+//     let param2 = prompt('Enter the number2');
+// function  param(number1, number2){
+//     if(number1 > number2){
+//         return 1;
+//     }
+//     else if (number1 < number2) {
+//         return -1;
+//     } else  
+//         return 0;
+//     }
+
+
+// if (param(param1,param2)==1){
+//     console.log('1');
+// }
+// else if (param(param1,param2) == -1){
+//     console.log('-1');
+// }
+// else {
+//     console.log('0');
+
 // }
 
 
 
-// Написать цикл, который выводит те числа из массива, которые больше или равны 15.
 
 
-// let array1 = [-1, 34, 0, 5, 29, 197, -54, 63, 12, -2, 34, 9, 289, 39, 328, 15];
-// for(let i = 0; i < array1.length; i ++){
-// if (array1[i] >= 15){
-//     console.log(array1[i]);
-// }}
+// Написать функцию, получающую на вход два числа. Если оба числа чётные - 
+// функция возвращает их произведение. Если оба числа нечётные - функция возвращает 
+// их сумму. Если одно из чисел чётное, а второе нечётное - функция возвращает 
+// это нечётное число.
+
+let param1 = prompt('Enter the number1');
+let param2 = prompt('Enter the number2');
+function  param(number1, number2){
+    if(number1 % 2 == 0 && number2 % 2 == 0){
+        return number1 * number2;
+    }
+    else if (number1 % 2 !== 0 && number2 % 2 !== 0) {
+        return number1 + number2;
+    } else  {
+        if (number1 % 2 !==0 ){
+        return number1 ;
+        }
+        else{
+            return number2;
+        }
+    }}
 
 
 
-// Написать цикл, который выводит только нечетные числа массива
+    let result = param(Number(param1), Number(param2));
 
-
-// let array2 = [-1, 34, 0, 5, 29, 197, -54, 63, 12, -2, 34, 9, 289, 39, 328, 15];
-// for(let i = 0; i < array2.length; i ++){
-//     if (array2[i] % 2 !== 0){
-//         console.log(array2[i]);
-//     }}
-
-
-
-// Вывести только те значения массива, индекс которых кратен трем
-
-// let array3 = [-1, 34, 0, 5, 29, 197, -54, 63, 12, -2, 34, 9, 289, 39, 328, 15];
-// for(let i = 0; i < array3.length; i ++){
-//     if (i % 3 == 0){
-//         console.log(array3[i]);  
-//     }}
-   
+    if (result === Number(param1) * Number(param2)) {
+      console.log(Number(param1) * Number(param2));
+    } else if (result === Number(param1) + Number(param2)) {
+      console.log(Number(param1) + Number(param2));
+    } else {
+      if (result === Number(param1)) {
+        console.log(Number(param1));
+      } else {
+        console.log(Number(param2));
+      }
+    }
